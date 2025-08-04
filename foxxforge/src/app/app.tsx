@@ -1,8 +1,9 @@
 import React from "react";
 import { Helmet } from "react-helmet";
 import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
-import Gallery from "./components/Gallery";
+import './i18n';
 import Home from "./components/Home";
+import Gallery from "./components/Gallery";
 import Pricing from "./components/Pricing";
 import Contact from "./components/Contact";
 
