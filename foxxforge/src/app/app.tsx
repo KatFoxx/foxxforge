@@ -1,7 +1,7 @@
 import React from "react";
 import { Helmet } from "react-helmet";
 import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
-import './i18n';
+import i18n from './i18n';
 import Home from "./components/Home";
 import Gallery from "./components/Gallery";
 import Pricing from "./components/Pricing";
@@ -27,8 +27,8 @@ const App = () => {
           <Link to="/impressum" className="hover:underline">Impressum</Link>
         </div>
         <div className="space-x-2">
-          <button aria-label="Switch to English">EN</button>
-          <button aria-label="Switch to German">DE</button>
+          <button onClick={() => i18n.changeLanguage("en")} aria-label="Switch to English">EN</button>
+          <button onClick={() => i18n.changeLanguage("en")} aria-label="Switch to German">DE</button>
         </div>
       </nav>
 

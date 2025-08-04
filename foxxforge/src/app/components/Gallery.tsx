@@ -2,7 +2,7 @@ import React from "react";
 import { useTranslation } from "react-i18next";
 
 const Gallery = () => {
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
   return (
     <main>
       <h1>{t('Gallery')}</h1>

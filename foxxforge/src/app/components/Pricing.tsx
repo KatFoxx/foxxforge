@@ -2,7 +2,7 @@ import React from "react";
 import { useTranslation } from "react-i18next";
 
 const Pricing = () => {
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
   return (
     <main>
       <h1>{t('Pricing')}</h1>
