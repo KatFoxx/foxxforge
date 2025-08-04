@@ -1,14 +1,13 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
-import classNames from "classnames";
 
 const images = [
-  "/gallery/wolfpriest",
-  "/gallery/logan.jpg",
-  "/gallery/headtaker.jpg",
-  "/gallery/crashingtide.jpg",
-  "/gallery/blinkblade.jpg"
+    "/gallery/wolfpriest.jpg",
+    "/gallery/logan.jpg",
+    "/gallery/headtaker.jpg",
+    "/gallery/bloodclaw.jpg",
+    "/gallery/bloodclawII.jpg"
 ];
 
 const FadingGallery = () => {
@@ -17,7 +16,7 @@ const FadingGallery = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrent((prev) => (prev + 1) % images.length);
-    }, 5000);
+    }, 5000); // 5 seconds per image
 
     return () => clearInterval(interval);
   }, []);
@@ -31,13 +30,9 @@ const FadingGallery = () => {
           alt={`Gallery Image ${index}`}
           layout="fill"
           objectFit="cover"
-          className={classNames(
-            "absolute transition-opacity duration-1000 ease-in-out",
-            {
-              "opacity-0": index !== current,
-              "opacity-100": index === current,
-            }
-          )}
+          className={`absolute transition-opacity duration-1000 ease-in-out ${
+            index === current ? "opacity-100" : "opacity-0"
+          }`}
           priority={index === 0}
         />
       ))}

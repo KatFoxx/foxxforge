@@ -5,13 +5,14 @@ import FadingGallery from "./components/FadingGallery";
 
 const Home = () => {
     const { t } = useTranslation();
-    <FadingGallery />
-    return (
 
+    return (
+        
         <main>
+            
             <h1 className="logo-font text-4xl font-bold tracking-wide drop-shadow-lg">{t('Welcome to the Foxx Forge!')}</h1>
             <p>{t('We are a company for commission building and painting of miniatures based in Germany. Nice to have you here!')}</p>
-
+                <FadingGallery />
             <h2 className="logo-font text-4xl font-bold tracking-wide drop-shadow-lg">{t('Our Services')}</h2>
             <ul>
                 <li>{t('Painting of Miniatures')}</li>
