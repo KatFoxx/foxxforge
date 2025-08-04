@@ -6,7 +6,7 @@ const Gallery = () => {
   const { t } = useTranslation();
   return (
     <main>
-      <h1>{t('Gallery')}</h1>
+      <h1 className="text-4xl">{t('Gallery')}</h1>
     </main>
   )
 };
