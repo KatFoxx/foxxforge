@@ -3,11 +3,11 @@ import React, { useEffect, useState } from "react";
 import Image from "next/image";
 
 const images = [
-    "/gallery/wolfpriest.jpg",
-    "/gallery/logan.jpg",
-    "/gallery/headtaker.jpg",
-    "/gallery/bloodclaw.jpg",
-    "/gallery/bloodclawII.jpg"
+    "/gallery/wolfpriest.webp",
+    "/gallery/logan.webp",
+    "/gallery/headtaker.webp",
+    "/gallery/bloodclaw.webp",
+    "/gallery/bloodclawII.webp"
 ];
 
 const FadingGallery = () => {

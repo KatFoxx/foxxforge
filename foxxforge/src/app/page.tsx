@@ -2,6 +2,7 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
 import FadingGallery from "./components/FadingGallery";
+import TierGallery from "./components/TierGallery";
 
 const Home = () => {
     const { t } = useTranslation();
@@ -24,10 +25,13 @@ const Home = () => {
             <h2 className="logo-font text-4xl font-bold tracking-wide drop-shadow-lg">{t('Our Painting Tiers')}</h2>
             <h3 className="text-xl">{t('Basic Tabletop Tier')}</h3>
             <p>{t('Basecoats, Shading, functional base design')}</p>
+            <TierGallery images={["/gallery/basic1.jpg", "/gallery/basic2.jpg"]} />
             <h3 className="text-xl">{t('Parade Ready Tier')}</h3>
             <p>{t('Basecoats, Highlights, Shading, detailed base design')}</p>
+            <TierGallery images={["/gallery/parade01.png", "/gallery/parade02.png", "/gallery/parade03.png"]} />
             <h3 className="text-xl">{t('High-End Tier')}</h3>
             <p>{t('Volumetric Highlights, Non-metallic metal, intricate base design')}</p>
+            <TierGallery images={["/gallery/highend.jpg", "/gallery/highend.jpg"]} />
         </main>
     );
 };
