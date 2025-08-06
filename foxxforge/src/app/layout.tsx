@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import 'yet-another-react-lightbox/styles.css';
 import 'react-photo-view/dist/react-photo-view.css';
 import Navbar from './components/Navbar';
 

@@ -1,25 +1,55 @@
 "use client";
 import React from "react";
-import { PhotoProvider, PhotoView } from "react-photo-view";
 import Image from "next/image";
+import Lightbox from "yet-another-react-lightbox";
+import Captions from "yet-another-react-lightbox/plugins/captions";
+import "yet-another-react-lightbox/styles.css";
+import "yet-another-react-lightbox/plugins/captions.css";
+import { useTranslation } from "react-i18next";
 
-const TierGallery = ({ images }: { images: string[] }) => {
+type GalleryImage = {
+  src: string;
+  caption: string;
+  alt: string;
+};
+
+const TierGallery = ({ images }: { images: GalleryImage[] }) => {
+  const { t } = useTranslation();
+  const [index, setIndex] = React.useState(-1);
+
   return (
-    <PhotoProvider>
+    <>
       <div className="flex flex-wrap justify-center gap-4 my-4">
-        {images.map((src, index) => (
-          <PhotoView key={index} src={src}>
+        {images.map((image, i) => (
+          <div
+            key={i}
+            className="relative w-48 h-32 cursor-pointer"
+            onClick={() => setIndex(i)}
+          >
             <Image
-              src={src}
-              alt={`Example ${index + 1}`}
-              width={200}
-              height={200}
-              className="rounded shadow-lg cursor-pointer hover:scale-105 transition-transform duration-300"
+              src={image.src}
+              alt={t(image.alt)}
+              fill
+              className="object-cover rounded shadow-lg hover:scale-105 transition-transform duration-300"
             />
-          </PhotoView>
+          </div>
         ))}
       </div>
-    </PhotoProvider>
+
+      <Lightbox
+        open={index >= 0}
+        index={index}
+        close={() => setIndex(-1)}
+        slides={images.map((image) => ({
+          src: image.src,
+          //title: t(image.caption),
+          alt: t(image.alt),
+          description: t(image.caption)
+        }))}
+        plugins={[Captions]}
+        captions={{ descriptionTextAlign: "center" }}
+      />
+    </>
   );
 };
 

@@ -20,6 +20,21 @@
   }
 }
 
+.rpv-toolbar {
+  position: relative;
+}
+
+.rpv-caption {
+  position: absolute;
+  bottom: 2rem;
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-size: 1.125rem;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.75);
+  z-index: 1000;
+}
+
 h1, h2 {
   font-family: 'Swamp Witch', Arial, Helvetica, sans-serif;
 }
