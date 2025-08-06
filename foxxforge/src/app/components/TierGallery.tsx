@@ -42,7 +42,6 @@ const TierGallery = ({ images }: { images: GalleryImage[] }) => {
         close={() => setIndex(-1)}
         slides={images.map((image) => ({
           src: image.src,
-          //title: t(image.caption),
           alt: t(image.alt),
           description: t(image.caption)
         }))}

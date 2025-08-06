@@ -1,6 +1,20 @@
 {
     "Pricing": "Pricing",
-    "My pricing model is very simple: I charge 20€ per hour. When we have figured out how extensive your project is we can figure out a quote. :)": "My pricing model is very simple: I charge 20€ per hour. When we have figured out how extensive your project is we can figure out a quote. :)",
+    "My pricing model is very simple: I charge a flat rate of 20€ per hour for all custom miniature painting and building services. No complicated pricing tiers, no hidden fees.": "My pricing model is very simple: I charge a flat rate of 20€ per hour for all custom miniature painting and building services. No complicated pricing tiers, no hidden fees.",
+    "You pay for the time and care that go into your model: whether it's a single Blood Claw, or a mighty Daemon Primarch. You tell me your budget, we will figure out what's possible.": "DYou pay for the time and care that go into your model: whether it's a single Blood Claw, or a mighty Daemon Primarch. You tell me your budget, we will figure out what's possible.",
+    "Of course larger commissions, like whole units and entire armies, will receive appropriate pricing.": "Of course larger commissions, like whole units and entire armies, will receive appropriate pricing.",
+    "For conversions you either supply the kits I use for the conversion, if you have some in mind, or we look for kits together according to your budget.": "For conversions you either supply the kits I use for the conversion, if you have some in mind, or we look for kits together according to your budget.",
+    "Afterwards you get all the leftover bits I did not use in the conversion to keep for yourself. Or I keep the bits for future work and deduct an appropriate amount from your bill.": "Afterwards you get all the leftover bits I did not use in the conversion to keep for yourself. Or I keep the bits for future work and deduct an appropriate amount from your bill.",
+    "Here are some examples so you know what you can expect.": "Hier sind ein paar Beispiele, damit du weißt, was dich erwartet.",
+    "This Ork Meganob took about two hours of work, so it would cost around 40€ as a single model. A unit of three would be about 100€": "This Ork Meganob took about two hours of work, so it would cost around 40€ as a single model. A unit of three would be about 100€",
+    "This Logan Grimnar miniature was painted in sub-assemblies and took about 12 hours to complete — so it would cost around 240€.": "This Logan Grimnar miniature was painted in sub-assemblies and took about 12 hours to complete — so it would cost around 240€.",
+    "This Daemon Prince was painted in sub-assemblies using advanced techniques. Without a finished base, he took about 20 hours — costing around 400€.": "This Daemon Prince was painted in sub-assemblies using advanced techniques. Without a finished base, he took about 20 hours — costing around 400€.",
+    "Large Orders": "Large Orders",
+    "Refer a Friend": "Refer a Friend",
+    "10% off all orders over 300€": "10% off all orders over 300€",
+    "10€ off your next order if you refer a friend!": "10€ off your next order if you refer a friend!",
+    "Disclaimer": "Disclaimer",
+    "According to §19 UStG, VAT is not applicable. Shipping costs are not included.": "According to §19 UStG, VAT is not applicable. Shipping costs are not included.",
     "Contact": "Contact",
     "Contact me via my socials or my email to get a quote for your project!": "Contact me via my socials or my email to get a quote for your project!",
     "Gallery": "Gallery",
@@ -59,5 +73,7 @@
     "Bulveye's left pauldron is inscribed with runes and symbols. This model would count as the higher end of the Parade Ready Tier.": "Bulveye's left pauldron is inscribed with runes and symbols. This model would count as the higher end of the Parade Ready Tier.",
     "A Leagues of Votann banner bearer smoking a pipe in the face of battle.": "A Leagues of Votann banner bearer smoking a pipe in the face of battle.",
     "A Wulfen Dreadnought based on the Brutalis chassis. This is the lower end of Parade Ready Tier with some small extras.": "A Wulfen Dreadnought based on the Brutalis chassis. This is the lower end of Parade Ready Tier with some small extras.",
-    "The entire dreadnought.": "The entire dreadnought."
+    "The entire dreadnought.": "The entire dreadnought.",
+    "Privacy Policy": "Privacy Policy",
+    "Send me an email at": "Send me an email at"
 }

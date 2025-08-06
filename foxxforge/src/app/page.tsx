@@ -12,7 +12,6 @@ const Home = () => {
     const { t } = useTranslation();
 
     return (
-
         <main>
 
             <h1 className="logo-font text-8xl tracking-wide drop-shadow-lg pb-6" >{t('Welcome to the Foxx Forge!')}</h1>

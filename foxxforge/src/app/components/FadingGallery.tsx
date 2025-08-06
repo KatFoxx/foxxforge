@@ -16,7 +16,7 @@ const FadingGallery = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrent((prev) => (prev + 1) % images.length);
-    }, 5000); // 5 seconds per image
+    }, 5000);
 
     return () => clearInterval(interval);
   }, []);
@@ -30,6 +30,7 @@ const FadingGallery = () => {
           alt={`Gallery Image ${index}`}
           layout="fill"
           objectFit="cover"
+          objectPosition="center top"
           className={`absolute transition-opacity duration-1000 ease-in-out ${
             index === current ? "opacity-100" : "opacity-0"
           }`}
