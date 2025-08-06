@@ -23,7 +23,7 @@ const TierGallery = ({ images }: { images: GalleryImage[] }) => {
         {images.map((image, i) => (
           <div
             key={i}
-            className="relative w-48 h-32 cursor-pointer"
+            className="relative w-120 h-120 cursor-pointer"
             onClick={() => setIndex(i)}
           >
             <Image
