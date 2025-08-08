@@ -29,7 +29,7 @@ const AboutMe = () => {
                     Instagram
                 </a>
                 <a
-                    href="https://twitch.com/"
+                    href="https://twitch.tv/katfoxxtv"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 text-purple-500 underline hover:text-purple-400"
