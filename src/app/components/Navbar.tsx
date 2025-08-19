@@ -1,13 +1,12 @@
 "use client";
 import React, { useState } from "react";
 import Link from "next/link";
-import i18n from "../i18n";
-import { useTranslation } from "react-i18next";
+import { useTranslation } from 'next-i18next';
 import Image from "next/image";
 import { HiMenu, HiX } from "react-icons/hi"; // Heroicons for hamburger & close
 
 const Navbar = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (

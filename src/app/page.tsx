@@ -1,15 +1,15 @@
 "use client";
 import React from "react";
-import { useTranslation } from "react-i18next";
+import { useTranslation } from 'next-i18next';
 import FadingGallery from "./components/FadingGallery";
 import TierGallery from "./components/TierGallery";
 import Link from "next/link";
-import basicTier from "../../public/data/basic-tier.json";
-import paradeTier from "../../public/data/parade-tier.json";
-import highEnd from "../../public/data/high-end-tier.json"
+import basicTier from "./data/basic-tier.json";
+import paradeTier from "./data/parade-tier.json";
+import highEnd from "./data/high-end-tier.json"
 
 const Home = () => {
-    const { t } = useTranslation();
+    const { t, i18n } = useTranslation();
 
     return (
         <main>

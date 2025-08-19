@@ -1,8 +1,8 @@
 import React from "react";
 import { Helmet } from "react-helmet";
 import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
-import './i18n';
-import Home from "./components/Home";
+import { appWithTranslation } from 'next-i18next';
+import Home from "./page";
 import Gallery from "./components/Gallery";
 import Pricing from "./components/Pricing";
 import Contact from "./components/Contact";
@@ -44,4 +44,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default appWithTranslation(App);

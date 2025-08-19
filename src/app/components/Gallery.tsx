@@ -1,12 +1,12 @@
 "use client";
 import React from "react";
-import { useTranslation } from "react-i18next";
+import { useTranslation } from 'next-i18next';
 import TierGallery from "./TierGallery";
-import paintedMiniatures from "../../../public/data/painted-miniatures.json"
-import conversions from "../../../public/data/conversions.json"
+import paintedMiniatures from "../data/painted-miniatures.json"
+import conversions from "../data/conversions.json"
 
 const Gallery = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation('translation');
   return (
     <main>
       <h1 className="text-8xl py-6">{t('Gallery')}</h1>

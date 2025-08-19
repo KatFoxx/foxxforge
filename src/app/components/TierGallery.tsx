@@ -5,7 +5,7 @@ import Lightbox from "yet-another-react-lightbox";
 import Captions from "yet-another-react-lightbox/plugins/captions";
 import "yet-another-react-lightbox/styles.css";
 import "yet-another-react-lightbox/plugins/captions.css";
-import { useTranslation } from "react-i18next";
+import { useTranslation } from 'next-i18next';
 
 type GalleryImage = {
   src: string;
@@ -14,7 +14,7 @@ type GalleryImage = {
 };
 
 const TierGallery = ({ images }: { images: GalleryImage[] }) => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const [index, setIndex] = React.useState(-1);
 
   return (
@@ -30,6 +30,7 @@ const TierGallery = ({ images }: { images: GalleryImage[] }) => {
               src={image.src}
               alt={t(image.alt)}
               fill
+              unoptimized
               className="object-cover rounded shadow-lg hover:scale-105 transition-transform duration-300"
             />
           </div>
