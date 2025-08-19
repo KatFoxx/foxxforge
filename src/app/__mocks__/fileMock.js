@@ -1,1 +1,1 @@
-module.exports = "test-file-stub";
+gitmodule.exports = "test-file-stub";
