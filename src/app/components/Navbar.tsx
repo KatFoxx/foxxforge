@@ -11,7 +11,7 @@ const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <nav className="sticky top-0 bg-black text-ivory flex items-center p-4 shadow-lg z-10">
+    <nav  className="sticky top-0 bg-black text-ivory flex items-center p-4 shadow-lg z-10">
       <div className="flex items-center">
         <Image
           src="/foxx_logo.png"
@@ -26,7 +26,7 @@ const Navbar = () => {
       </div>
 
       <div className="flex-1 hidden md:flex justify-start ml-8">
-        <div className="flex space-x-6 logo-font text-3xl tracking-wide drop-shadow-lg">
+        <div data-testid="navbar" className="flex space-x-6 logo-font text-3xl tracking-wide drop-shadow-lg">
           <Link href="/" className="hover:text-[#4b0c18] transition-colors duration-200">
             Home
           </Link>
@@ -73,21 +73,21 @@ const Navbar = () => {
       </div>
 
       {menuOpen && (
-        <div className="absolute top-full right-0 w-48 bg-black text-ivory rounded shadow-lg mt-2 p-4 flex flex-col space-y-4 z-20 md:hidden">
-          <Link href="/" onClick={() => setMenuOpen(false)} className="hover:text-[#4b0c18] transition-colors duration-200">
-            Home
+        <div data-testid="mobile-menu" className="absolute top-full right-0 w-48 bg-black text-ivory rounded shadow-lg mt-2 p-4 flex flex-col space-y-4 z-20 md:hidden">
+          <Link href="/" className="hover:text-[#4b0c18] transition-colors duration-200">
+            <a onClick={() => setMenuOpen(false)}>Home</a>
           </Link>
-          <Link href="/gallery" onClick={() => setMenuOpen(false)} className="hover:text-[#4b0c18] transition-colors duration-200">
-            {t("Gallery")}
+          <Link href="/gallery" className="hover:text-[#4b0c18] transition-colors duration-200">
+            <a onClick={() => setMenuOpen(false)}>{t("Gallery")}</a>
           </Link>
-          <Link href="/pricing" onClick={() => setMenuOpen(false)} className="hover:text-[#4b0c18] transition-colors duration-200">
-            {t("Pricing")}
+          <Link href="/pricing" className="hover:text-[#4b0c18] transition-colors duration-200">
+            <a onClick={() => setMenuOpen(false)}>{t("Pricing")}</a>
           </Link>
-          <Link href="/contact" onClick={() => setMenuOpen(false)} className="hover:text-[#4b0c18] transition-colors duration-200">
-            {t("Contact")}
+          <Link href="/contact" className="hover:text-[#4b0c18] transition-colors duration-200">
+            <a onClick={() => setMenuOpen(false)}>{t("Contact")}</a>
           </Link>
-          <Link href="/aboutme" onClick={() => setMenuOpen(false)} className="hover:text-[#4b0c18] transition-colors duration-200">
-            {t("About Me")}
+          <Link href="/aboutme"  className="hover:text-[#4b0c18] transition-colors duration-200">
+            <a onClick={() => setMenuOpen(false)}>{t("About Me")}</a>
           </Link>
 
           <div className="flex space-x-2 mt-2">
