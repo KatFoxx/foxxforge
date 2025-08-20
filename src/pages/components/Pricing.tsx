@@ -1,10 +1,9 @@
-"use client";
 import React from "react";
 import { useTranslation } from 'next-i18next';
 import Image from "next/image";
 
 const Pricing = () => {
-  const { t, i18n } = useTranslation();
+  const { t, i18n } = useTranslation('translation');
 
   return (
     <main className="prose prose-invert mx-auto px-4">

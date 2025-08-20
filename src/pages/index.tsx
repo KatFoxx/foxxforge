@@ -1,20 +1,19 @@
-"use client";
 import React from "react";
-import { useTranslation } from 'next-i18next';
 import FadingGallery from "./components/FadingGallery";
 import TierGallery from "./components/TierGallery";
 import Link from "next/link";
-import basicTier from "./data/basic-tier.json";
-import paradeTier from "./data/parade-tier.json";
-import highEnd from "./data/high-end-tier.json"
+import basicTier from "../pages/data/basic-tier.json";
+import paradeTier from "../pages/data/parade-tier.json";
+import highEnd from "../pages/data/high-end-tier.json";
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
+import { useTranslation } from 'next-i18next';
 
 const Home = () => {
-    const { t, i18n } = useTranslation();
+    const { t } = useTranslation('translation');
 
     return (
         <main>
-
-            <h1 className="logo-font text-8xl tracking-wide drop-shadow-lg pb-6" >{t('Welcome to the Foxx Forge!')}</h1>
+            <h1 className="logo-font text-8xl tracking-wide drop-shadow-lg pb-6">{t('Welcome to the Foxx Forge!')}</h1>
             <p className="pb-4">{t('We are a company for commission building and painting of miniatures based in Germany. Nice to have you here!')}</p>
             <FadingGallery />
             <h2 className="logo-font text-6xl tracking-wide drop-shadow-lg pb-6">{t('Our Services')}</h2>
@@ -39,5 +38,13 @@ const Home = () => {
         </main>
     );
 };
+
+export async function getStaticProps({ locale }: { locale: string }) {
+    return {
+        props: {
+            ...(await serverSideTranslations(locale, ['translation'])),
+        },
+    };
+}
 
 export default Home;

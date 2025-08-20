@@ -5,7 +5,7 @@
 import React from "react";
 import { render, screen } from "@testing-library/react";
 import '@testing-library/jest-dom'; 
-import AboutMe from "../components/AboutMe"; 
+import AboutMe from "../pages/components/AboutMe"; 
 
 describe("AboutMe component", () => {
   it("renders the heading", () => {

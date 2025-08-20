@@ -1,11 +1,10 @@
-"use client";
 import React from "react";
-import { useTranslation } from "react-i18next";
+import { useTranslation } from "next-i18next";
 import Image from "next/image";
 import { FaInstagram, FaTwitch } from "react-icons/fa";
 
 const AboutMe = () => {
-    const { t } = useTranslation();
+    const { t } = useTranslation('translation');
     return (
         <main className="px-4 py-10 text-center flex flex-col min-h-screen">
             <h1 className="text-8xl py-6">{t('About Me')}</h1>

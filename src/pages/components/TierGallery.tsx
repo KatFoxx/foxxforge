@@ -1,4 +1,3 @@
-"use client";
 import React from "react";
 import Image from "next/image";
 import Lightbox from "yet-another-react-lightbox";
@@ -13,9 +12,17 @@ type GalleryImage = {
   alt: string;
 };
 
-const TierGallery = ({ images }: { images: GalleryImage[] }) => {
-  const { t, i18n } = useTranslation();
+interface TierGalleryProps {
+  images?: GalleryImage[]; 
+}
+
+const TierGallery = ({ images = [] }: TierGalleryProps) => {
+  const { t, i18n } = useTranslation('translation');
   const [index, setIndex] = React.useState(-1);
+
+   if (images.length === 0) {
+    return <p className="text-center">{t('noImages')}</p>;
+  }
 
   return (
     <>

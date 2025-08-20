@@ -1,10 +1,9 @@
-"use client";
 import React from "react";
 import { useTranslation } from 'next-i18next';
 import { FaInstagram } from "react-icons/fa";
 
 const ObfuscatedMail = () => {
-  const user = "kat";
+  const user = "info";
   const domain = "foxxforge.de";
   const subject = "Miniature Project Inquiry";
 
@@ -22,7 +21,7 @@ const ObfuscatedMail = () => {
 };
 
 const Contact = () => {
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation('translation');
 
   return (
     <main className="p-6 text-center flex flex-col min-h-screen">
