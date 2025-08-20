@@ -21,6 +21,4 @@ function MyApp({ Component, pageProps }: AppProps) {
   );
 }
 
-console.log(nextI18NextConfig)
-
 export default appWithTranslation(MyApp, nextI18NextConfig);
