@@ -3,7 +3,7 @@ import { useTranslation } from 'next-i18next';
 import Image from "next/image";
 
 const Pricing = () => {
-  const { t, i18n } = useTranslation('translation');
+  const { t } = useTranslation('translation');
 
   return (
     <main className="prose prose-invert mx-auto px-4">

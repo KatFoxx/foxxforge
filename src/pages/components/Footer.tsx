@@ -3,7 +3,7 @@ import Link from "next/link";
 import { useTranslation } from 'next-i18next';
 
 const Footer = () => {
-    const { t, i18n } = useTranslation('translation');
+    const { t } = useTranslation('translation');
     return (<footer className="bg-black text-ivory flex justify-center gap-4">
         <Link href={"/impressum"} className="text-white underline hover:text-red-500">Impressum</Link>
         <Link href={"/privacyPolicy"} className="text-white underline hover:text-red-500">{t('Privacy Policy')}</Link>

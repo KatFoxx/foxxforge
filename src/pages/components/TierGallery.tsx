@@ -17,7 +17,7 @@ interface TierGalleryProps {
 }
 
 const TierGallery = ({ images = [] }: TierGalleryProps) => {
-  const { t, i18n } = useTranslation('translation');
+  const { t } = useTranslation('translation');
   const [index, setIndex] = React.useState(-1);
 
    if (images.length === 0) {

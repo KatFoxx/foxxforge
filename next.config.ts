@@ -5,6 +5,7 @@ const nextConfig: NextConfig = {
   reactStrictMode: true,
   compiler: { styledComponents: true },
   i18n: nextI18NextConfig.i18n,
+  output: 'export',
 };
 
 export default nextConfig;
