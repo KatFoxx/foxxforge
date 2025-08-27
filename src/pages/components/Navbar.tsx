@@ -36,8 +36,8 @@ const Navbar = () => {
       </div>
 
       {/* Desktop links */}
-      <div className="flex-1 hidden md:flex justify-start ml-8">
-        <div className="flex space-x-6 logo-font text-3xl tracking-wide drop-shadow-lg">
+      <div className="flex-1 hidden md:flex justify-start ml-8 nav-link">
+        <div className="flex space-x-6 text-3xl tracking-wide drop-shadow-lg">
           {navLinks.map(({ href, label }) => (
             <Link
               key={href}

@@ -9,15 +9,23 @@ import 'react-photo-view/dist/react-photo-view.css';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 
+import { Cinzel } from 'next/font/google';
+
+const cinzel = Cinzel({
+  subsets: ['latin'],
+  weight: ['400', '500', '700'],
+  variable: '--font-heading',
+});
+
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <>
+    <div className={cinzel.variable}>
       <Navbar />
       <main>
         <Component {...pageProps} />
       </main>
       <Footer />
-    </>
+    </div>
   );
 }
 

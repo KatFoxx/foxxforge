@@ -16,7 +16,7 @@ const Home = () => {
             <h1 className="logo-font text-8xl tracking-wide drop-shadow-lg pb-6">{t('Welcome to the Foxx Forge!')}</h1>
             <p className="pb-4">{t('We are a company for commission building and painting of miniatures based in Germany. Nice to have you here!')}</p>
             <FadingGallery />
-            <h2 className="logo-font text-6xl tracking-wide drop-shadow-lg pb-6">{t('Our Services')}</h2>
+            <h2 className="text-6xl tracking-wide drop-shadow-lg pb-6">{t('Our Services')}</h2>
             <ul>
                 <li className="pb-2">{t('Painting of Miniatures')}</li>
                 <li className="pb-2">{t('Building of Miniatures')}</li>
@@ -24,7 +24,7 @@ const Home = () => {
                 <li className="pb-2">{t('Army Commissions')}</li>
             </ul>
 
-            <h2 className="logo-font text-6xl tracking-wide drop-shadow-lg pb-6">{t('Our Painting Tiers')}</h2>
+            <h2 className="text-6xl tracking-wide drop-shadow-lg pb-6">{t('Our Painting Tiers')}</h2>
             <Link href={"/gallery"} className="text-red-400 underline hover:text-red-300 py-6">{t('For more examples check out the gallery!')}</Link>
             <h3 className="text-xl py-4 font-bold">{t('Basic Tabletop Tier')}</h3>
             <p>{t('Basecoats, Shading, functional base design')}</p>
