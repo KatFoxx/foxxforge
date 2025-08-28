@@ -1,5 +1,5 @@
 trigger_deploy:
-  stage: trigger
+  stage: deploy
   trigger:
     project: Deploygroup/foxxforge-src
   variables:
