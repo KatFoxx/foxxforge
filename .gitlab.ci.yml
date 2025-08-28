@@ -1,0 +1,8 @@
+trigger_deploy:
+  stage: trigger
+  trigger:
+    project: Deploygroup/foxxforge-src
+  variables:
+    SOURCE_REPO: $CI_PROJECT_PATH
+    SOURCE_BRANCH: $CI_COMMIT_REF_NAME
+    SOURCE_COMMIT: $CI_COMMIT_SHA
