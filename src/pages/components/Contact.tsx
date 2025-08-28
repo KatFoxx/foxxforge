@@ -4,7 +4,7 @@ import { FaInstagram } from "react-icons/fa";
 
 const ObfuscatedMail = () => {
   const user = "info";
-  const domain = "foxxforge.de";
+  const domain = "foxxforge.com";
   const subject = "Miniature Project Inquiry";
 
   const email = `${user}@${domain}`;
