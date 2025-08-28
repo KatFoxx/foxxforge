@@ -42,7 +42,7 @@ const Navbar = () => {
             <Link
               key={href}
               href={href}
-              className="hover:text-[#4b0c18] transition-colors duration-200"
+              className="hover:text-[#a30000] transition-colors duration-200"
             >
               {label}
             </Link>
@@ -53,12 +53,12 @@ const Navbar = () => {
       {/* Desktop language buttons */}
       <div className="hidden md:flex space-x-2 ml-4">
         <Link href={pathname} locale="en" aria-label="Switch to English"
-          className="hover:bg-[#4b0c18] hover:text-ivory cursor-pointer px-2 py-1 rounded transition-colors duration-200">
+          className="hover:bg-[#a30000] hover:text-ivory cursor-pointer px-2 py-1 rounded transition-colors duration-200">
           EN
 
         </Link>
         <Link href={pathname} locale="de" aria-label="Switch to German"
-          className="hover:bg-[#4b0c18] hover:text-ivory cursor-pointer px-2 py-1 rounded transition-colors duration-200">
+          className="hover:bg-[#a30000] hover:text-ivory cursor-pointer px-2 py-1 rounded transition-colors duration-200">
 
           DE
 
