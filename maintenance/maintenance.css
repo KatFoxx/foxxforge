@@ -1,3 +1,10 @@
+@font-face {
+  font-family: 'SwampWitch';
+  src: url('./SwampWitch.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
     margin: 0;
     height: 100vh;
@@ -21,6 +28,10 @@ a {
 
 a:hover {
     text-decoration: underline;
+}
+
+img {
+    align-self: center;
 }
 
 footer {
