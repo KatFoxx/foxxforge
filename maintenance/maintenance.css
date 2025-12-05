@@ -1,0 +1,29 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #331922;
+    font-family: 'Times New Roman', Times, serif;
+    color: #efd2b7;
+}
+
+main {
+    max-width: 500px;
+}
+
+a {
+    color: #efd2b7;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    margin-top: 20px;
+    font-size: 0.9rem;
+}
