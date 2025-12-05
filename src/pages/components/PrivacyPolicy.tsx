@@ -130,9 +130,9 @@ const PrivacyPolicy: React.FC = () => {
         <p>
           Unsere Website wird gehostet bei:
           <br />
-          <strong>[Name des Hosting-Providers]</strong>
+          <strong>Krimmel IT Service</strong>
           <br />
-          [Adresse oder Link zur Datenschutzerklärung des Hosters]
+          https://postefix.de/contact
         </p>
         <p>
           Der Hoster erhebt in unserem Auftrag Daten (siehe Punkt 3), um eine
@@ -146,7 +146,7 @@ const PrivacyPolicy: React.FC = () => {
         <h2 className="font-sans text-3xl">9. Aktualität und Änderung dieser Datenschutzerklärung</h2>
         <p>
           Diese Datenschutzerklärung ist aktuell gültig und hat den Stand:{" "}
-          <strong>[August 2025]</strong>
+          <strong>[Dezember 2025]</strong>
         </p>
         <p>
           Wir behalten uns vor, diese Datenschutzerklärung bei Bedarf zu ändern,
